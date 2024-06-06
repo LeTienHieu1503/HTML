@@ -23,6 +23,11 @@ body {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin: 15px;
+}
+
 iframe {
   width: 100%;
   height: 100%;
@@ -45,13 +50,14 @@ iframe {
   max-height: 130px;
   flex-direction: column;
   background-color: #3b5998;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .container-flex {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10px;
+  margin-top: -20px;
 }
 
 .content {
@@ -59,7 +65,7 @@ iframe {
   flex-direction: column;
   padding: 20px;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 75%;
 }
 
@@ -69,7 +75,7 @@ iframe {
   align-items: center;
   padding: 20px;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 25%;
 }
 
@@ -274,12 +280,14 @@ nav ul li a:hover,
 }
 
 footer {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: #3b5998;
   color: #ffffff;
   text-align: center;
   font-weight: bold;
-  padding: 10px;
+  padding: 20px;
+  margin-top: -25px;
+  margin-bottom: -25px;
 }
 
 /* Pagination styles */
