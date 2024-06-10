@@ -378,5 +378,6 @@ footer {
   position: relative;
   display: inline-block;
   margin: 0;
-  text-shadow: 3px 3px 1px #4c0be2, 6px 6px 0px #ba2e95, 9px 9px 0px #000001;
+  text-shadow: 0 0 5px #fad550, /* 0 0 3px #FAD550,*/ 0 0 15px gray,
+    0 0 20px rgb(17, 0, 255), 0 0 35px #0909f6;
 }
