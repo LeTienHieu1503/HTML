@@ -353,3 +353,13 @@ footer {
 .search-bar button:hover {
   background-color: #4c70ba;
 }
+
+.shadow-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  text-shadow: 3px 3px 1px #4c0be2, 6px 6px 0px #ba2e95, 9px 9px 0px #000001;
+}
