@@ -50,7 +50,7 @@ iframe {
 .container {
   margin-top: 2px;
   display: flex;
-  max-height: 130px;
+  max-height: 145px;
   flex-direction: column;
   background-color: #3b5998;
   /* border-radius: 20px; */
@@ -105,6 +105,9 @@ header {
 nav {
   border-radius: 10px;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -113,6 +116,8 @@ nav ul {
   padding-right: 150px;
   display: flex;
   justify-content: flex-end;
+  flex: 1;
+  margin-right: 20px;
 }
 
 nav ul li {
@@ -318,4 +323,33 @@ footer {
 .pagination a.active {
   background-color: #4caf50;
   color: white;
+}
+
+/* Search */
+/* Add these styles to your existing CSS file */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0 20px 20px 0;
+  background-color: #3b5998;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #4c70ba;
 }
