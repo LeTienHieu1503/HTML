@@ -24,8 +24,15 @@ a {
 }
 
 .img-Layout {
-  width: 60%;
-  height: 35%;
+  width: 300px;
+  height: 270px;
+  align-self: center;
+}
+
+.img-Layout1 {
+  width: 850px;
+  height: 550px;
+  align-self: center;
 }
 
 .divCode_layout {
