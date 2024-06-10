@@ -83,7 +83,7 @@ iframe {
 
 .content-aside img {
   justify-self: center;
-  width: 26em;
+  width: 100%;
   border-radius: 20px;
 }
 
