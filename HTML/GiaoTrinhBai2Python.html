@@ -9,7 +9,7 @@
 </head>
 
 <body class="content">
-    <h1><b>BÀI 2 : BIẾN , SỐ VÀ CHUỖI</b></h1>
+    <h1 align="center"><b>BÀI 2 : BIẾN , SỐ VÀ CHUỖI</b></h1>
     <h3><b>2.1. Biến và lệnh gán</b></h3>
     <h4><b><i>2.1.1. Khái niệm biến</i></b></h4>
     <p class="p-Layout">Biến là đại lượng được đặt tên, dùng để lưu trữ giá trị và giá trị có thể được thay đổi trong
@@ -141,11 +141,77 @@
     <p>&emsp;&emsp;&#10070;Toán tử logic trong Python</p>
     <img class="img-Layout" src="../Pictures/tt logic.png">
     <h4><b><i> 2.5.4. Thư viện math trong Python</i></b></h4>
-    <p>&emsp;&emsp;Python cung cấp thư viện math, trong đó hỗ trợ nhiều hàm tính toán số học, chúng ta có thể sử dụng
+    <p class="p-Layout">&emsp;&emsp;Python cung cấp thư viện math, trong đó hỗ trợ nhiều hàm tính toán số học, chúng ta
+        có thể sử dụng
         thư viện này trong
         chương trình thông qua lệnh import sau:<br>
-        &emsp;&emsp;<b>Cú pháp:</b></p>
-
+        &emsp;&emsp;<b>Cú pháp:</b> import&lt;tên thư viện&gt; as [&lt;tên bí danh&gt;]</p>
+    <p class="p-Layout">&emsp;&emsp;Trong đó:</p>
+    <ul>
+        <li>&lt;tên thư viện&gt;: Là tên thư viện chứa các hàm mà chúng ta muốn sử dụng, ví dụ math, numpy, …</li>
+        <li>&lt;tên thư viện&gt;: Là một tên ngắn gọn dùng để thay cho tên thư viện.</li>
+    </ul>
+    <p class="p-Layout">Để gọi (sử dụng) hàm trong thư viện, chúng ta sử dụng câu lệnh sau:</p>
+    <p>&emsp;&emsp;<b>Cú pháp:</b>
+        <tên thư viện>.<tên hàm>([<danh sách các tham số>])</danh>
+                </t>
+    </p>
+    <p class="p-Layout">&emsp;&emsp;Trong đó:</p>
+    <ul>
+        <li>&lt;tên hàm&gt;: Là tên hàm mà chúng ta muốn sử dụng</li>
+        <li>&lt;danh sách tham số&gt;:Là danh sách tham số truyền vào làm dữ liệu đầu vào cho hàm.</li>
+    </ul>
+    <img class="img-Layout" src="../Pictures/ViDu2.1.png">
+    <h3><b>2.6. Dữ liệu kiểu chuỗi</b></h3>
+    <h4><b><i> 2.6.1. Khái niệm</i></b></h4>
+    <p>&emsp;&emsp;Chuỗi trong Python là một dãy các ký tự trong bảng mã Unicode hoặc bảng mã ASCII. Vì vậy, chuỗi trong
+        Python có thể viết
+        có dấu tiếng việt<br>
+        &emsp;&emsp;Chuỗi trong Python phải được đặt trong dấu " " (nháy kép) hoặc dấu ' ' (nháy đơn), hoặc cũng có thể
+        dùng cặp ba dấu nháy
+        đơn liên tiếp ''' ''' hoặc cặp ba dấu nháy kép liên tiếp """ """. Trong đó nội dung đặt trong cặp ba dấu nháy
+        đơn liên
+        tiếp hoặc cặp ba dấu nháy kép liên tiếp sẽ được giữ nguyên dạng. Do đó chúng ta có thể viết chuỗi trên nhiều
+        dòng mà
+        không cần dùng ký tự nối dòng với ba cặp dấu nháy đơn hoặc nháy kiếp liên tiếp.<br>
+        &emsp;&emsp;Thông thường, người ta hay sử dụng cặp nháy đơn ' ' hoặc nháy kép " " để biểu diễn một chuỗi ngắn và
+        sử dụng cặp ba cặp
+        dấu nháy đơn hoặc nháy kiếp liên tiếp để biểu diễn một chuỗi dài hoặc chuỗi có chứa nhiều các ký tự đặc
+        biệt.<br>
+        &emsp;&emsp;Ví dụ: "Bài tập Python", 'Phần mềm ứng dụng'
+    </p>
+    <h4><b><i> 2.6.2. Các ký tự đặc biệt trong chuỗi</i></b></h4>
+    <p class="p-Layout">&emsp;&emsp;Trong bài giảng này chúng ta hiểu ký tự là một chuỗi có độ dài bằng 1 và dữ liệu
+        chuỗi được đặt trong cặp dấu nháy đơn
+        hoặc nháy kép, có thể chứa các ký tự thông thường (a-z, A-Z, 0-9,…) hoặc các ký tự đặc biệt (!, @, *, &, %,
+        (,),…) Tuy
+        nhiên, khi chúng ta muốn biểu diễn các ký tự đặc biệt trong chuỗi, Python quy định sử dụng ký tự điều khiển “\”
+        đặt
+        trước ký tự đặc biệt đó, ví dụ khi ta đưa ra câu lệnh print(“\a”) thì sẽ nghe thấy một tiếng bíp được phát ra từ
+        máy
+        tính.<br>
+        Các ký tự điều khiển thường dùng trong Python
+    </p>
+    <img class="img-Layout" src="../Pictures/KiTu_Python.png">
+    <p class="p-Layout">Các ký tự điều khiển thường dùng trong Python</p>
+    <img class="img-Layout" src="../Pictures/ViDu2.2.png">
+    <h4><b><i> 2.6.3. Các toán tử với chuỗi</i></b></h4>
+    <p><b>Toán tử +:</b> Thực hiện việc nối chuỗi lại với nhau, toán tử này thường được sử dụng</p>
+    <p><b>Cú pháp:</b> s1+s2(với s1, s2 đều là chuỗi)</p>
+    <img class="img-Layout" src="../Pictures/ViDu2.3.png">
+    <p class="p-Layout"><b>Toán tử *:</b>Python hỗ trợ toán tử nhân rất đặc biệt, nó giúp chúng ta tạo ra một chuỗi lặp
+        đi lặp lại với số lần bất kỳ</p>
+    <p class="p-Layout"><b>Cú pháp:</b> s*n</p>
+    <p class="p-Layout">&emsp;&emsp;Trong đó:</p>
+    <ul>
+        <li>
+            <p class="p-Layout">s: Là một giá trị chuỗi hoặc một biến chuỗi</p>
+        </li>
+        <li>
+            <p class="p-Layout">n: là một số nguyên chỉ số lần lặp lại chuỗi s</p>
+        </li>
+    </ul>
+    <img class="img-Layout" src="../Pictures/ViDu2.4.png">
 </body>
 
 </html>
