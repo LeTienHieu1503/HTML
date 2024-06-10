@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="../CSS/GiaoTrinhBai2.css" />
+</head>
+
+<body class="content">
+    <h1><b>BÀI 2 : BIẾN , SỐ VÀ CHUỖI</b></h1>
+    <h3><b>2.1. Biến và lệnh gán</b></h3>
+    <h4><b><i>2.1.1. Khái niệm biến</i></b></h4>
+    <p class="p-Layout">Biến là đại lượng được đặt tên, dùng để lưu trữ giá trị và giá trị có thể được thay đổi trong
+        quá trình thực hiện
+        chương trình<br>
+        Tuỳ vào các kiểu dữ liệu mà ngôn ngữ lập trình Python sẽ cấp phát vùng nhớ khác nhau cho một biến, một biến có
+        thể chứa kiểu dữ liệu như: số nguyên (int), số thực (float), chuỗi (str), danh sách (list),….<br>
+        Trong Python, mỗi biến là một con trỏ chỉ đến ô nhớ chứa giá trị đã được gán cho biến đó.<br>
+        Các ô nhớ trong máy tính được đánh địa chỉ (số thứ tự) bắt đầu từ 0.<br>
+        Để lấy địa chỉ ô nhớ lưu trữ giá trị của một biến, ta dùng hàm id(Tên biến).<br>
+    </p>
+    <h4><b><i> 2.1.2. Khai báo biến</i></b></h4>
+    <p class="p-Layout">Không giống như các ngôn ngữ lập trình C/C++,C# hay Java, Biến trong <b>Python</b> không cần
+        khai báo trước,
+        không nhất thiết phải khai báo dữ liệu, <b>Python</b> tự động nhận dạng và tùy biến theo kiểu dữ liệu được gán.
+        Do đó, một biến trong Python có thể có nhiều kiểu dữ liệu khác nhau tuỳ thuộc vào giá trị mà ta gán cho biến ở
+        từng đoạn mã chương trình.<br>
+        Chúng ta có thể dùng hàm type(tên biến) để xem kiểu dữ liệu hiện thời của biến</p>
+    <p class="p-Layout"><b>Cú pháp:</b>&lt;<i>Tên biến</i>&gt; = &lt;<i>Giá trị</i>&gt;</p>
+    <p class="p-Layout"><b>Ví dụ:</b></p>
+    <p class="p-Layout">
+        a = "Học Python" # biến a có kiểu xâu<br>
+        a = 5&emsp;&emsp;# biến a có kiểu nguyên<br>
+        a = 5.5&emsp;&emsp;# biến a có kiểu thực<br>
+        a = True #biến a có kiểu logic<br>
+        Ta có thể ép kiểu cho biến bằng cách khai báo kiểu cho giá trị gán cho biến.
+    </p>
+    <p class="p-Layout"><b>Ví dụ:</b><br>
+        a = str(5) # a là một biến kiểu xâu<br>
+        b = int(5.5) #b là một biến kiểu số nguyên<br>
+        c = float(4) #c là biến kiểu số thực<br>
+        Trong trường hợp nếu bạn thực hiện lệnh print(a+b) thì python sẽ báo lỗi vì không thể cộng một xâu với một số
+        nguyên</p>
+    <h4><b><i> 2.1.3. Một số quy tắc về đặt tên biến</i></b></h4>
+    <p class="p-Layout">Biến trong <b>Python</b> được quy định như sau:</p>
+    <ul>
+        <li>Biến có thể chứa các ký tự chữ cái và chữ số.</li>
+        <li>Không chứa kí tự trống "space" và các ký tự đặc biệt khác như: +,-,*,/,...</li>
+        <li>Tên biến không bắt đầu bằng ký tự số.</li>
+        <li>Phân biệt chữ hoa và chữ thươờng, ví dụ biến a khác với biến A</li>
+        <li>Không sử dụng các từ khóa (keyword), tên hàm đã được ngôn ngữ lập trình sử dụng.</li>
+        <li>Tên biến nên đặt ngắn gọn, gợi nhớ và dễ nhớ.</li>
+    </ul>
+    <p class="p-Layout"><b>Ví dụ:</b><br>
+        Tên biến đúng: x,y,x1,x2,...<br>
+        Tên biến sai: 1x,2x,a*b,de f </p>
+    <h4><b><i> 2.1.4. Câu lệnh gán</i></b></h4>
+    <p class="p-Layout">
+        Câu lệnh gán trong <b>Python</b> dùng dấu = để gán giá trị bên phải cho biến bên trái.<br>
+        Các lệnh gán trong <b>Python</b> cụ thể như sau:
+    </p>
+    <img class="img-Layout" src="../Pictures/toán tử.png">
+    <h4><b><i> 2.1.5. Một sốs cách rút gọn để gán giá trị cho biến</i></b></h4>
+    <p class="p-Layout">Python cho phép người lập trình viết ngắn gọn các biểu thức gán giá trị, điều này đã tạo ra các
+        câu lệnh rất đẹp
+        và thanh lịch.<br>
+        Ví dụ:<br>
+        Thay vì bạn ghi:<br>
+        TH1:&emsp;a=2<br>
+        &emsp;&emsp;b=2<br>
+        &emsp;&emsp;c=2<br>
+        Bạn có thể ghi tắt với các cách sau:a=b=c=2<br>
+        TH2:&emsp;a=1<br>
+        &emsp;&emsp;b=2<br>
+        &emsp;&emsp;c=3<br>
+        Bạn có thể ghi tắt với các cách sau:a,b,c=1,2,3<br>
+        TH3:&emsp;x=a<br>
+        &emsp;&emsp;a=b<br>
+        &emsp;&emsp;b=x<br>
+        Bạn có thể ghi tắt với các cách sau:a,b=b,a (a=b-hiển nhiên; b=x mà x=a nên b=a)
+    </p>
+    <h3><b>2.2. Lệnh nhập/xuất</b></h3>
+    <p class="p-Layout">&emsp;&emsp;Lệnh input() có chức năng nhập dữ liệu từ thiết bị vào với nội dung là số, biểu thức
+        hay xâu cho kết
+        quả là xâu kí tự. Cú pháp lệnh input() như sau:</p>
+    <p class="p-Layout"><em>&lt;biến&gt;: = input(&lt;Dòng thông báo&gt;)</em><br>
+        Ví dụ:
+        name = input("Nhập họ và tên: ")<br>
+        print("Xin chào",name)<br>
+        Lệnh print() có chức năng đưa dữ liệu ra thiết bị ra. Thông tin đưa ra gồm một hay nhiều dữ liệu với kiểu khác
+        nhau, cả biểu thức tính toán.
+    </p>
+    <h3><b>2.3. Chuyển đổi kiểu dữ liệu</b></h3>
+    <p class="p-Layout">&emsp;&emsp;Một số kiểu dữ liệu cơ bản của Python bao gồm: int (số nguyên), float (số thực), str
+        (xâu kí tự),
+        bool (logic). Chúng ta có cách chuyển đổi giữa các kiểu dữ liệu như sau:<br>
+    </p>
+    <ul>
+        <li>Lệnh int() có chức năng chuyển đổi số thực hoặc xâu có số nguyên thành số nguyên.</li>
+        <li>Lệnh float()dùng để chuyển đổi số nguyên và xâu kí tự thành số thực.</li>
+        <li>Lệnh str() dùng để chuyển đổi dữ liệu thành xâu kí tự.</li>
+        <li>Các lệnh int(), float() không thực hiện xâu là biểu thức toán</li>
+    </ul>
+    <p class="p-Layout"><b><em>&#10070;Nhập dữ liệu kiểu số nguyên hoặc số thực từ bàn phím:</em></b></p>
+    <p class="p-Layout">&emsp;&emsp;-Nếu cần nhập sang số nguyên thì sau khi nhập giá trị dùng lệnh int() để chuyển đổi
+        sang kiểu số
+        nguyên như sau:<br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;n= int(input(“Nhập số tự nhiên: ”))<br>
+        &emsp;&emsp;-Nếu cần nhập số thực thì sau khi nhập giá trị cần dùng lệnh float() để chuyển đổi sang kiểu số thực
+        như sau:<br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;x= float(input(“Nhập số thực x: ”))
+    </p>
+    <h3><b>2.4. Từ khóa</b></h3>
+    <p class="p-Layout">Từ khoá là những từ dành riêng của ngôn ngữ lập tình Python, do đó trong các công việc lập trình
+        tên đặt như tên
+        biến, tên hằng, tên hàm,… không được trùng với các từ khoá này.
+        <br>Dưới đây là tóm tắt danh sách các từ khoá của Python hay gặp trong bài giảng này
+    </p>
+    <img class="img-Layout" src="../Pictures/từ khóa.png"></img>
+    <h3><b>2.5. Dữ liệu kiểu số</b></h3>
+    <h4><b><i> 2.5.1. Kiểu số nguyên</i></b></h4>
+    <p class="p-Layout">&emsp;&emsp;Số nguyên bao gồm các số dương, hoặc âm hoặc số 0, không chứa phần thập phân. <br>Ví
+        dụ: 123, -6, 3,
+        55, …<br>
+        &emsp;&emsp;Chú ý: Python hỗ trợ xử lý các số nguyên lên tới trên 16 chữ số</p>
+    <h4><b><i> 2.5.2. Kiểu số thực</i></b></h4>
+    <p class="p-Layout">&emsp;&emsp;Số thực bao gồm các số dương, hoặc âm có chứa cả phần nguyên và phần thập phân, ngăn
+        cách chúng là
+        một dấu chấm “.” như: 123.89, -6.5, 0.34, 562.0, …<br>
+        &emsp;&emsp;Chú ý: Python hỗ trợ xử lý các số thực có độ chính xác xấp xỉ 15 chữ số phần thập phân.</p>
+    <h4><b><i> 2.5.3. Biểu thức</i></b></h4>
+    <p class="p-Layout">&emsp;&emsp;Toán tử: Là các phép toán chỉ ra thao tác toán học cần thực hiện như: Toán tử số học
+        (cộng, trừ, nhân, chia), toán tử
+        gán, toán tử so sánh, toán tử logic và toán tử điều kiện.<br></p>
+    <p>&emsp;&emsp;&#10070;Toán tử số học</p>
+    <img class="img-Layout" src="../Pictures/tt số học.png">
+    <p>&emsp;&emsp;&#10070;Toán tử so sánh trong Python cho kết quả bằng True hoặc False</p>
+    <img class="img-Layout" src="../Pictures/tt so sánh.png">
+    <p>&emsp;&emsp;&#10070;Toán tử logic trong Python</p>
+    <img class="img-Layout" src="../Pictures/tt logic.png">
+    <h4><b><i> 2.5.4. Thư viện math trong Python</i></b></h4>
+    <p>&emsp;&emsp;Python cung cấp thư viện math, trong đó hỗ trợ nhiều hàm tính toán số học, chúng ta có thể sử dụng
+        thư viện này trong
+        chương trình thông qua lệnh import sau:<br>
+        &emsp;&emsp;<b>Cú pháp:</b></p>
+
+</body>
+
+</html>
