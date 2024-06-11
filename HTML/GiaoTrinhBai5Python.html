@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 5</title>
+    <link rel="stylesheet" href="../CSS/GiaoTrinhBai5Python.css" />
+  </head>
+  <body>
+    <main class="content">
+      <h1>BÀI 5: TỪ ĐIỂN</h1>
+      <p class="p-Layout">
+        &#160;&#160;&#160;Với cấu trúc dữ liệu kiểu danh sách, chúng ta có thể
+        lưu trữ mọi đối tượng với số lượng không giới hạn và truy xuất đến từng
+        phần tử thông qua chỉ số của phần tử. Tuy nhiên với dữ liệu có cấu trúc
+        ví dụ như thông tin của một sinh viên gồm nhiều trường thông tin: Mã
+        sinh viên, Họ tên, tuổi, ... ta muốn lưu trữ dữ liệu này một cách tường
+        minh thì danh sách không làm được điều đó. &#160;&#160;&#160;Python cung
+        cấp cho chúng ta thêm kiểu dữ liệu từ điển (Dictionary) để lưu trữ tập
+        dữ liệu có cấu trúc, mỗi phần tử trong từ điển lưu trữ bởi một cặp < key
+        > : < value > (< khoá > : < giá trị >) với ràng buộc khoá là duy nhất
+        trong từ điển, một từ điển bao gồm các đặc tính sau:
+      </p>
+      <ul>
+        <li>
+          <p class="p-Layout">
+            Được giới hạn bởi cặp dấu ngoặc nhọn {}, tất cả những gì nằm trong
+            đó là những phần tử của từ điển.
+          </p>
+        </li>
+        <li>
+          <p class="p-Layout">
+            Các phần tử của từ điển được phân cách nhau bởi dấu phẩy “,”
+          </p>
+        </li>
+        <li>
+          <p class="p-Layout">
+            Mỗi phần tử của từ điển là một cặp < khoá >:< giá trị >
+          </p>
+        </li>
+        <li>
+          <p class="p-Layout">
+            Ngăn cách giữa thành phần < khoá > và thành phần < giá trị > bởi dấu
+            hai chấm “:”
+          </p>
+        </li>
+        <li>
+          <p class="p-Layout">
+            Các < khoá > trong một từ điển buộc phải là một đối tượng duy nhất.
+          </p>
+        </li>
+      </ul>
+      <h2>5.1 Tạo từ điển</h2>
+      <p class="p-Layout">
+        Để tạo một từ điển ta thực hiện một trong hai cách sau:
+        <br />
+        <b>Cách 1</b>: Sử dụng câu lệnh gán để tạo từ điển
+        <br />
+        <b>Cú pháp:</b>
+        <br />
+        < tên biến >={< khoá_1: giá trị_1 >,< khoá_2: giá trị_2 >, ... ,<
+        khoá_n: giá trị_n >}
+        <br />
+        Trong đó:
+        <br />
+        < tên biến >: Là tên từ điển do người dùng đặt
+        <br />
+        < khoá_1 >, < khoá_2 >, ..., < khoá_n >: Là danh mục các khoá được dùng
+        như chỉ số của các phần tử trong từ điển và các khoá này không trùng
+        nhau.
+        <br />
+        < giá trị_1 >, < giá trị_2 >,..., < giá trị_n> : Là dãy các giá trị được
+        lưu trữ trong từ điển đi theo khoá và được quản lý bởi < tên biến >. Nếu
+        ta không đưa cặp khoá, giá trị nào vào danh sách thì Python sẽ khởi động
+        một từ điển rỗng.
+      </p>
+      <img class="img-Layout1" src="../Pictures/ViDu5.1.png" alt="" />
+      <p class="p-Layout">
+        <b>Cách 2:</b> Sử dụng hàm dict() để tạo từ điển <br /><b>Cú pháp:</b
+        >&#160;&#160;&#160;< tên biến > = dict()
+      </p>
+      <img class="img-Layout1" src="../Pictures/ViDu5.2.png" alt="" />
+      <h2>5.2 Truy cập đến các phần tử trong từ điển</h2>
+      <p class="p-Layout">
+        <b>Cú pháp</b>: < tên biến >[< khoá >] hoặc < tên biến >.get (khóa) >
+      </p>
+      <img class="img-Layout1" src="../Pictures/ViDu5.3.png" alt="" />
+      <h2>5.2.2. Lấy tất cả các khoá trong từ điển.</h2>
+      <p class="p-Layout">
+        <b>Cú pháp:</b>&#160;&#160;&#160; < tên biến >.key() #truy xuất đến
+        thuộc tính keys
+      </p>
+      <img class="img-Layout1" src="../Pictures/ViDu5.4.png" alt="" />
+      <h2>5.2.3 Lấy tất cả các giá trị trong từ điển</h2>
+      <p class="p-Layout">
+        <b>Cú pháp:</b>&#160;&#160;&#160; < tên biến >.values() #truy xuất đến
+        thuộc tính values
+      </p>
+      <img class="img-Layout1" src="../Pictures/ViDu5.5.png" alt="" />
+    </main>
+  </body>
+</html>
