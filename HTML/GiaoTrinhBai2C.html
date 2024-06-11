@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="../CSS/GiaoTrinhBai2C.css" />
+  </head>
+  <body>
+    <main class="content">
+      <h1>BÀI 2: LẬP TRÌNH MODULE</h1>
+      <p class="p-Layout">
+        Trong thực tế, khi ta muốn giải quyết một công việc phức tạp nào đó, ta
+        thường chia nhỏ công việc đó thành các công việc nhỏ hơn và tất nhiên
+        những công việc nhỏ này lại thực hiện dễ dàng hơn rất nhiều. Thực vậy,
+        trong lập trình ta cũng có nhu cầu chia nhỏ chương trình phức tạp thành
+        những chương trình nhỏ hơn, đơn giản và dễ hiểu. Mỗi chương trình nhỏ đó
+        được gọi là hàm. Bài này trình bày các khái niệm cơ bản về hàm, cách
+        viết và sử dụng hàm.
+      </p>
+      <h2>2.1 Tổ chức chương trình</h2>
+      <p class="p-Layout">
+        Mỗi chương trình như đã nêu ra ở các ví dụ trong các chương trước đây
+        thường khá ngắn; do đó:
+      </p>
+      <ul>
+        <li>
+          <p class="p-Layout">Thường không khó để hiểu;</p>
+        </li>
+        <li>
+          <p class="p-Layout">
+            Dễ nhớ toàn bộ nội dung chương trình cũng như hiểu trình tự logic
+            các bước của công việc.
+          </p>
+        </li>
+      </ul>
+      <p class="p-Layout">
+        Tuy nhiên khi giải quyết các bài toán thực tế thì văn bản chương trình
+        thường dài hơn rất nhiều, khi đó:
+      </p>
+      <ul>
+        <li>
+          <p class="p-Layout">
+            Việc quản lý trình tự logic các công việc là tương đối khó khăn.
+          </p>
+        </li>
+        <li>
+          <p class="p-Layout">
+            Thêm nữa, khi viết chương trình chúng ta thường gặp những đoạn
+            chương trình lặp đi lặp lại nhiều lần ở những chỗ khác nhau với sự
+            khác biệt rất nhỏ hoặc thậm chí giống nhau hoàn toàn.
+          </p>
+        </li>
+      </ul>
+      <p class="p-Layout">
+        Để giải quyết vấn đề này, tất cả các ngôn ngữ lập trình đều cho phép
+        người sử dụng tổ chức chương trình thành chương trình chính và các
+        chương trình con dạng thủ tục và hàm.
+      </p>
+      <h3>- Cấu trúc chương trình</h3>
+      <p class="p-Layout">
+        Một chương trình hoàn chỉnh trong C/C++ có 6 phần chính (nhưng không bắt
+        buộc) theo thứ tự như sau:
+      </p>
+      <ol>
+        <li>
+          <p class="p-Layout">Chỉ thị tiền xử ký;</p>
+        </li>
+        <li>
+          <p class="p-Layout">Định nghĩa kiểu dữ liệu;</p>
+        </li>
+        <li>
+          <p class="p-Layout">Khái báo prototype;</p>
+        </li>
+        <li>
+          <p class="p-Layout">Khai báo biến ngoài;</p>
+        </li>
+        <li>
+          <p class="p-Layout">Chương trình chính</p>
+        </li>
+        <li>
+          <p class="p-Layout">
+            Cài đặt hàm
+            <br /><br />
+            Là phương pháp hướng hàm có cấu trúc ko phải hướng đối tượng
+            <br /><br />Hàm trả về gt <br /><br />Hàm không trả về gt : trả về
+            nhiều gt thông qua đối số của hàm <br /><br />Phân biệt biến toàn
+            cục biến cục bộ <br />Tham số truyền tham trị và tham số truyền tham
+            chiếu <br />[return_type] function_name ([parameter_list]);
+            <br /><br />Nếu ko có gt trả về thì return_type có thể là void vd:
+            void dolt () <br /><br />Kiểu trả về mặc định là int vd int func()
+            <br /><br />Int round(float x) <br /><br />Int USCLN(unsigned int a,
+            unsigned int b) <br />Cần gt để tính toán thì hàm phải trả về gt
+            <br /><br />Đối số là dữ liệu cần thiết để dùng để xử lý
+          </p>
+        </li>
+      </ol>
+      <h3>- Cách hoạt động của hàm trong C</h3>
+      <p class="p-Layout">
+        Hình ảnh dưới đây cho bạn thấy cách hoạt động của hàm (chương trình con)
+        ở trong ngôn ngữ C. Khi một lời gọi hàm được thực thi thì:
+        <br /><br />Chương trình của bạn sẽ nhảy tới nơi định nghĩa hàm đó và
+        thực thi các lệnh từ trên xuống dưới ở trong hàm đó. <br /><br />Khi hàm
+        thực hiện xong, chương trình tiếp tục quay về thực hiện các lệnh phía
+        sau lời gọi hàm.
+      </p>
+      <img class="img-Layout1" src="../Pictures/CachHoatDongC.jpg" alt="" />
+    </main>
+  </body>
+</html>
