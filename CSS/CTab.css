@@ -63,6 +63,11 @@ iframe {
   width: 100%;
 }
 
+.img-Logo {
+  width: 60px;
+  height: 60px;
+}
+
 header {
   color: #ffffff;
   text-align: left;
