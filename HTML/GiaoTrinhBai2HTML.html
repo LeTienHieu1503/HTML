@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="../CSS/GiaoTrinhBai2HTML.css" />
+  </head>
+  <body>
+    <main class="content">
+      <h1>BÀI 2: SỬ DỤNG NGÔN NGỮ HTML</h1>
+      <h2>2.1 Giới thiệu về HTML</h2>
+      <p class="p-Layout">
+        Hiện nay có hai loại hệ thống xử lý văn bản trên máy tính. Hệ thống thứ
+        nhất là các hệ soạn thảo văn bản dùng trên môi trường đồ hoạ như
+        Microsoft Word, Word Perfect... Mục đích chính của các hệ soạn thảo văn
+        bản kiểu này là chú trọng vào hình thức của văn bản. Vì vậy các chương
+        trình đó tập trung vào xử lý kiểu dạng chữ, hình ảnh trong văn bản và
+        cách bố cục chúng. Loại hệ thống thứ hai không chú trọng tới hình thức
+        thể hiện văn bản mà nhấn mạnh cấu trúc văn bản đó. Các văn bản này có
+        cấu trúc như một ngôn ngữ lập trình đơn giản, bằng các mô tả ngôn ngữ
+        bên trong nó để thể hiện các liên kết giữa nhiều kiểu dữ liệu khác nhau.
+        Bên cạnh đó cũng cho phép mô tả một số thuộc tính trình bày văn bản như
+        kiểu dạng chữ, canh lề...
+        <br /><br />Ngôn ngữ HTML (Hypertext Markup Language) là một ngôn ngữ mô
+        tả dữ liệu thuộc hệ thống thứ hai. Nó là một dạng của ngôn ngữ mô tả tài
+        liệu tổng quát SGML (Standard Generalized Markup Language). SGML cho
+        phép ta thiết lập mối liên hệ giữa các thành phần khác nhau trong cùng
+        một tài liệu hoặc giữa nhiều tài liệu thuộc các dạng dữ liệu khác nhau.
+        Nó cho phép một tài liệu có thể được dịch và hiển thị trên mọi máy tính
+        chạy các hệ điều hành khác nhau mà bố cục và nội dung không thay đổi.
+        Các máy tính, dù chạy trên môi trường Windows, Linux, Unix, Sun-OS, Dos,
+        Mac-OS đều có thể hiển thị được văn bản HTML mà không cần phải sửa đổi
+        gì do một tập lệnh chung thống nhất mà mỗi hệ điều hành đều có thể hiểu
+        được. <br /><br />Người ta sử dụng các mô tả ngôn ngữ của SGML để định
+        nghĩa ra các ngôn ngữ nhằm mô tả các dạng tài liệu khác nhau dựa vào một
+        loại định nghĩa gọi là DTD (Document Type Definition). Có rất nhiều loại
+        ngôn ngữ được định nghĩa theo kiểu DTD, trong đó HTML là ngôn ngữ phổ
+        biến nhất và dùng trong dịch vụ World Wide Web. Như vậy HTML tuân thủ
+        các quy tắc mà ngôn ngữ theo dạng SGML phải có và các thành phần của nó
+        được định nghĩa bởi các DTD của SGML. <br /><br />Giống như SGML, HTML
+        là ngôn ngữ định dạng và đánh dấu các văn bản. HTML sử dụng các thẻ
+        (tag) để định dạng, sắp đặt thông tin trên văn bản. Ta có thể phân các
+        thẻ của HTML thành hai loại: loại thứ nhất dùng để thể hiện các chỉ dẫn
+        về định dạng văn bản như kiểu chữ, cỡ chữ, định lề... loại thứ hai là
+        loại mô tả về cấu trúc của văn bản bao gồm việc định nghĩa các danh
+        sách, các liên kết dữ liệu, các mô tả thể hiện hình ảnh, văn bản, âm
+        thanh. <br /><br />Ta cũng có thể phân biệt các thể của HTML theo cấu
+        tạo của nó: ta có các thẻ chứa (Container) hoặc rỗng (Empty). Để tạo ra
+        một văn bản HTML ta có thể dùng các hệ soạn thảo đơn giản như Notepad
+        của Winddows, hoặc bất kì một Editor nào của Dos tạo file ASCII hoặc các
+        phần mềm chuyên dụng như Micrrosoft FrontPage, DreamWav... để tạo các
+        trang web.
+      </p>
+      <h2>2.2 Trình bày soạn thảo ơ bản trên trang Web</h2>
+      <p class="p-Layout">
+        Bước 1: Mở phần mềm hỗ trợ soạn thảo web (Notepad++, VS Code,
+        NetBeans,….)
+        <br /><br />Bước 2: Soạn thảo HTML với cấu trúc tổng quát của HTML
+      </p>
+      <img class="img-Layout1" src="../Pictures/HTMLBai2ViDu2.2.png" alt="" />
+      <p class="p-Layout">
+        Bước 3: Lưu trang web vào File, chọn Save
+        <br /><br />Bước 4: Sử dụng trình duyệt web hiển thị nội dung trên trang
+        web
+      </p>
+      <h2>2.3 Định dạng văn bản trên trang Web</h2>
+      <h3>2.3.1 Định dạng cấu trúc tài liệu HTML</h3>
+      <p class="p-Layout">
+        a. Thẻ < HTML >....< /HTML > <br /><br />Cặp thẻ này được sử dụng để xác
+        nhận một tài liệu là tài liệu HTML, tức là nó có sử dụng các thẻ HTML để
+        trình bày. Toàn bộ nội dung của tài liệu được đặt giữa cặp thẻ này. Cú
+        pháp:
+      </p>
+      <img
+        class="img-Layout2"
+        src="../Pictures/HTMLBai2ViDu2.3.1a.png"
+        alt=""
+      />
+      <p class="p-Layout">
+        b. Thẻ < head > ... < /head >
+        <br /><br />Thẻ này đánh dấu một đoạn văn bản là phần đầu đề của một tài
+        liệu HTML. Nó gần giống như phần HEADER trong các tài liệu văn bản khác.
+        Cú pháp:
+      </p>
+      <img
+        class="img-Layout2"
+        src="../Pictures/HTMLBai2ViDu2.3.1b.png"
+        alt=""
+      />
+      <p class="p-Layout">
+        c. Thẻ < TITLE >...< /TITLE > <br /><br />Thẻ này để định nghĩa tiêu đề
+        của một tài liệu HTML, nó thường hiện lên trên phần tiêu đề (Title Bar)
+        của cửa sổ trình duyệt khi mở tài liệu đó. Nếu tiêu đề dài quá 64 kí tự
+        thì có thể nó hiển thị không đúng. Một tài liệu HTML chỉ có một tiêu đề,
+        tiêu đề thường ngắn gọn và mô tả nội dung của tài liệu. Cú pháp:
+      </p>
+      <img
+        class="img-Layout1"
+        src="../Pictures/HTMLBai2ViDu2.3.1c.png"
+        alt=""
+      />
+      <p class="p-Layout">
+        d. Thẻ < BODY >....< /BODY > <br /><br />Thẻ này được sử dụng để xác
+        định phần nội dung chính của tài liệu - phần thân (body) của tài liệu.
+        Trong phần thân có thể chứa các thông tin định dạng nhất định để đặt ảnh
+        nền cho tài liệu, màu nền, màu văn bản siêu liên kết, đặt lề cho trang
+        tài liệu... Những thông tin này được đặt ở phần tham số của thẻ.
+        <br /><br />Các thuộc tính được quy định trong thẻ body sẽ được áp dụng
+        cho toàn bộ phần nội dung bên thân trang web và được hiển thị ra trình
+        duyệt (như hình nền, màu nền, màu chữ...).: Thuộc tính BACKGROUND là
+        thuộc tính quy định hình nền trang cho trang web. Cú pháp:
+      </p>
+    </main>
+  </body>
+</html>
