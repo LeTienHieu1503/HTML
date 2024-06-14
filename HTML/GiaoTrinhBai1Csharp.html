@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="../CSS/GiaoTrinhBai1Csharp.css">
+</head>
+
+<body>
+    <main class="content">
+        <h1 align="center"><b>Bài 1: Biến, hằng, toán tử </b></h1>
+        <h3><b>1.3.1. Biến</b></h3>
+        <h4><b>a) Khái niệm:</b></h4>
+        <p class="p-Layout">- Biến là một vùng lưu trữ ứng với một kiểu dữ liệu.
+            <br>- Biến có thể được gán giá trị và cũng có thể thay đổi giá trị trong khi thực hiện
+            các lệnh của chương trình.
+        </p>
+        <h4><b>b) Khai báo biến: </b>Sau khi khai báo biến phải gán giá trị cho biến</h4>
+        <p class="p-Layout"><b>
+                <Kiểu_Dữ_Liệu>
+                    <tên_biến> [ = <giá_trị> ] ;
+            </b></p>
+        <h4><b>Ví dụ 1.1:</b> Khởi tạo và gán giá trị một biến</h4>
+        <p class="p-Layout">class Bien<br>
+            {<br>
+            static void Main()<br>
+            {<br>
+            // Khai báo và khởi tạo biến<br>
+            int bien = 9 ;<br>
+            System.Console.WriteLine("Sau khi khoi tao: bien = {0}",
+            bien)<br>
+            // Gán giá trị cho biến<br>
+            bien=5;<br>
+            // Xuất ra môn hình<br>
+            System.Console.WriteLine("Sau khi gan: bien = {0}", bien);<br>
+            {<br>
+            // Khai báo và khởi tạo biến<br>>
+            int bien = 9 ;<br>
+            System.Console.WriteLine("Sau khi khoi tao: bien = {0}",
+            bien) ;<br>
+            // Gán giá trị cho biến<br>
+            bien=5;<br>
+            // Xuất ra màn hình<br>
+            System.Console.WriteLine("Sau khi gan: bien = {0}", bien) ;<br>
+            }<br>
+            }</p>
+        <h3><b>1.3.2. Hằng</b></h3>
+        <h4><b>a) Khái niệm:</b></h4>
+        <p clas="p-Layout">- Hằng cũng là một biến nhưng giá trị của hằng không thay đổi trong khi thực
+            hiện các lệnh của chương trình.<br>
+            - Hằng được phân làm 3 loại:<br>
+            + Giá trị hằng (literal)<br>
+            + Biểu tượng hằng (symbolic constants)<br>
+            + Kiểu liệt kê (enumerations)</p>
+        <h4><b>b) Giá trị hằng:</b></h4>
+        <p class="p-Layout">Ví dụ: x = 100; //100 được gọi là giá trị hằng</p>
+        <h4><b>c) Biểu tượng hằng:</b> gán một tên hằng cho một giá trị hằng</h4>
+        <p class="p-Layout"><b>Khai báo:</b><br>
+            <const>
+                <Kiểu_Dữ_Liệu>
+                    <tên_hằng> = <giá_trị> ;
+        </p>
+        <p class="p-Layout"><b>Ví dụ 1.2:</b>Nhập vào bán kính, in ra chu vi và diện tích hình tròn.<br>
+            class HinhTron<br>
+            {<br>
+            static void Main()<br>
+            {<br>
+            // Khai báo biểu tượng hằng<br>
+            const double PI = 3.14159 ;<br>
+            // Khai báo biến<br>
+            int bankinh;<br>
+            double chuvi, dientich;<br>
+            string chuoi;<br>
+            // Nhập giá trị cho biến chuỗi<br>
+            System.Console.Write("Nhap ban kinh hinh tron: ") ;<br>
+            chuoi = System.Console.ReadLine() ;<br>
+            // Đổi chuỗi thành số và gán vào biến số<br>
+            bankinh = System.Convert.ToInt32(chuoi) ;<br>
+            // Gán giá trị cho biến<br>
+            chuvi = 2 * bankinh * PI ;<br>
+            dientich = bankinh * bankinh * PI ;<br>
+            // Xuất ra màn hình<br>
+            System.Console.WriteLine("Chu vi hinh tron = {0:0.00}", chuvi);<br>
+            System.Console.WriteLine("Dien tich hinh tron = {0:0.00}", dientich) ;<br>
+            }<br>
+            }</p>
+        <h4><b>d) Kiểu liệt kê:</b> là tập hợp các tên hằng có giá trị số không thay đổi (danh sách liệt kê)</h4>
+        <p class="p-Layout">Khai báo:<br>
+            <b>
+                <enum>
+                    <Tên_Kiểu_Liệt_Kê> = {<tên_hằng_1>, <tên_hằng_2>, ..., <tên_hằng_n>} ;<br>
+                                    <b>Ví dụ:</b>
+            </b>
+            <br>
+            enum NhietDoNuoc<br>
+            {<br>
+            DoDong = 0, DoNguoi = 20, DoAm = 40, DoNong = 60, DoSoi = 100, <br>
+            }
+        </p>
+        <h3><b>1.3.3. Toán tử</b></h3>
+        <p class="p-Layout">
+            a) Toán tử toán học: + , - , * , / , %<br>
+            b) Toán tử tăng / giảm: += , -= , *= , /= , %=<br>
+            c) Toán tử tăng / giảm 1 đơn vị: ++ , --<br>
+            d) Toán tử gán: =<br>
+            e) Toán tử quan hệ: == , != , > , >= , < , <=<br>
+                f) Toán tử logic: ! , && , || <br>
+                g) Toán tử 3 ngôi: (Điều_Kiện) ? (Biểu_Thức_1) : (Biểu_Thức_2) ;
+        </p>
+    </main>
+</body>
+
+</html>
