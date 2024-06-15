@@ -1,108 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lập trình cơ bản</title>
+    <link rel="icon" href="../Pictures/Logo.png" />
+    <link rel="stylesheet" href="../CSS/TrangChu.css" />
+    <script src="../JS/TrangChu.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lập trình cơ bản</title>
-  <link rel="icon" href="../Pictures/Logo.png" />
-  <link rel="stylesheet" href="../CSS/TrangChu.css" />
-  <script src="../JS/TrangChu.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <img class="img-logo" src="../Pictures/Logo.png" alt="" />
-      <div class="div-layout">
-        <h1 class="shadow-text">Lập trình cơ bản</h1>
-        <div class="search-bar">
-          <input type="text" placeholder="Tìm kiếm..." />
-          <button type="submit">Tìm kiếm</button>
+  <body>
+    <div class="container">
+      <header>
+        <img class="img-logo" src="../Pictures/Logo.png" alt="" />
+        <div class="div-layout">
+          <h1 class="shadow-text">Lập trình cơ bản</h1>
+          <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <button type="submit">Tìm kiếm</button>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="TrangChu.html">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Python</a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="GioiThieuPython.html" target="content"
+                  >Giới thiệu Python</a
+                >
+              </li>
+              <li>
+                <a href="CaiDatPython.html" target="content">Cài đặt Python</a>
+              </li>
+              <li>
+                <a href="PythonTab.html" target="content">Giáo trình Python</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">C</a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="GioiThieuC.html" target="content">Giới thiệu C</a>
+              </li>
+              <li><a href="CaiDatC.html" target="content">Cài đặt C</a></li>
+              <li><a href="CTab.html" target="content">Giáo trình C</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">C#</a>
+            <ul class="dropdown-content">
+              <li>
+                <a
+                  href="https://codegym.vn/blog/c-la-gi-tim-hieu-ve-ngon-ngu-lap-trinh-c/"
+                  target="content"
+                >
+                  Giới thiệu C#</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.iostream.co/article/cai-dat-moi-truong-lap-trinh-c-va-tao-project-dau-tien-G1tVG31"
+                  target="content"
+                  >Cài đặt C#</a
+                >
+              </li>
+              <li>
+                <a href="CSharpTab.html" target="content"> Giáo trình C#</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">HTML</a>
+            <ul class="dropdown-content">
+              <li>
+                <a
+                  href="https://wiki.matbao.net/html-la-gi-nen-tang-lap-trinh-web-cho-nguoi-moi-bat-dau/"
+                  target="content"
+                >
+                  Giới thiệu HTML</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://webcoban.vn/html/cach-tao-va-chay-thuc-thi-mot-tap-tin-html.html"
+                  target="content"
+                  >Cài đặt HTML</a
+                >
+              </li>
+              <li>
+                <a href="HTMLTab.html" target="content">Giáo trình HTML</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="GopY.html" target="content">Góp ý</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-flex">
+      <main class="content">
+        <article class="iframe-container">
+          <iframe src="TrangChuTab.html" name="content"></iframe>
+        </article>
+      </main>
+      <aside class="content-aside">
+        <a
+          href="https://tuicocach.com/tuicocach-com-nhan-dat-textlink-banner-gp/"
+        >
+          <img
+            class="img-border"
+            src="../Pictures/Thiết kế chưa có tên1.png"
+            alt=""
+          />
+        </a>
+        <a href="https://tuicocach.com/dich-vu-code-thue-tuicocach-com/">
+          <img
+            class="img-border"
+            src="../Pictures/Thiết kế chưa có tên.png"
+            alt=""
+          />
+        </a>
+      </aside>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-section">
+          <h3>CÁC TRANG</h3>
+          <p><a class="footer-1" href="PythonTab.html">Python</a></p>
+          <p><a class="footer-1" href="CTab.html">C</a></p>
+          <p><a class="footer-1" href="CSharpTab.html">C#</a></p>
+          <p><a class="footer-1" href="HTMLTab.html">HTML</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>LIÊN HỆ</h3>
+          <p>Email: letienhieu490@gmail.com</p>
+          <p>
+            Github:
+            <a href="https://github.com/LeTienHieu1503" target="_blank"
+              >https://github.com/LeTienHieu1503</a
+            >
+          </p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/tien.hieu.1503/" target="_blank"
+              >https://www.facebook.com/tien.hieu.1503/</a
+            >
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>THẺ NỔI BẬT</h3>
+          <p># Python</p>
+          <p># C</p>
+          <p># C Sharp</p>
+          <p># HTML</p>
         </div>
       </div>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="TrangChu.html">Trang chủ</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Python</a>
-          <ul class="dropdown-content">
-            <li>
-              <a href="GioiThieuPython.html" target="content">Giới thiệu Python</a>
-            </li>
-            <li>
-              <a href="CaiDatPython.html" target="content">Cài đặt Python</a>
-            </li>
-            <li>
-              <a href="PythonTab.html" target="content">Giáo trình Python</a>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">C</a>
-          <ul class="dropdown-content">
-            <li>
-              <a href="GioiThieuC.html" target="content">Giới thiệu C</a>
-            </li>
-            <li><a href="CaiDatC.html" target="content">Cài đặt C</a></li>
-            <li><a href="CTab.html" target="content">Giáo trình C</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">C#</a>
-          <ul class="dropdown-content">
-            <li><a href="https://codegym.vn/blog/c-la-gi-tim-hieu-ve-ngon-ngu-lap-trinh-c/" target="content"> Giới thiệu
-                C#</a></li>
-            <li><a href="https://www.iostream.co/article/cai-dat-moi-truong-lap-trinh-c-va-tao-project-dau-tien-G1tVG31"
-                target="content">Cài đặt C#</a></li>
-            <li><a href="CSharpTab.html" target="content"> Giáo trình C#</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">HTML</a>
-          <ul class="dropdown-content">
-            <li>
-              <a href="https://wiki.matbao.net/html-la-gi-nen-tang-lap-trinh-web-cho-nguoi-moi-bat-dau/"
-                target="content">
-                Giới thiệu HTML</a>
-            </li>
-            <li>
-              <a href="https://webcoban.vn/html/cach-tao-va-chay-thuc-thi-mot-tap-tin-html.html" target="content">Cài
-                đặt
-                HTML</a>
-            </li>
-            <li>
-              <a href="HTMLTab.html" target="content">Giáo trình HTML</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="GopY.html" target="content">Góp ý</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="container-flex">
-    <main class="content">
-      <article class="iframe-container">
-        <iframe src="TrangChuTab.html" name="content"></iframe>
-      </article>
-    </main>
-    <aside class="content-aside">
-      <a href="https://tuicocach.com/tuicocach-com-nhan-dat-textlink-banner-gp/">
-        <img class="img-border" src="../Pictures/Thiết kế chưa có tên1.png" alt="" />
-      </a>
-      <a href="https://tuicocach.com/dich-vu-code-thue-tuicocach-com/">
-        <img class="img-border" src="../Pictures/Thiết kế chưa có tên.png" alt="" />
-      </a>
-    </aside>
-  </div>
-  <footer>
-    <p>
-      Nhóm: Thảo, Hiếu, Quyên, Tâm<br />
-      Lớp: CDTin46A
-    </p>
-  </footer>
-</body>
-
+      <div class="footer-bottom">
+        <img class="img_Layout" src="../Pictures/Logo.png" alt="Logo" />
+        <div>
+          <h3>VỀ BLOG LẬP TRÌNH CƠ BẢN</h3>
+          <p>
+            LẬP TRÌNH CƠ BẢN là blog cá nhân xây dựng nhằm chia sẻ các kỹ năng
+            lập trình cơ bản về các ngôn ngữ Python, C, C#, HTML mà tôi biết đến
+            với cộng đồng.
+          </p>
+        </div>
+        <div>
+          <h3>KẾT NỐI VỚI TÔI</h3>
+          <div>
+            <ul class="example-2">
+              <li class="icon-content">
+                <a
+                  href="https://www.facebook.com/tien.hieu.1503/"
+                  aria-label="Facebook"
+                  data-social="facebook"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.049 15.75H5.645V8.174H4.027V5.897h1.618V4.296c0-1.523.892-2.357 2.263-2.357.651 0 1.347.12 1.347.12v1.573h-.759c-.748 0-.985.468-.985.942v1.103h1.714l-.274 2.277h-1.44V15.75h-2.37z"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">Facebook</div>
+              </li>
+              <li class="icon-content">
+                <a
+                  href="https://github.com/LeTienHieu1503"
+                  aria-label="Github"
+                  data-social="github"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 .198a8 8 0 0 0-2.53 15.594c.4.074.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.225.484-2.695-1.073-2.695-1.073-.364-.925-.89-1.17-.89-1.17-.727-.496.055-.486.055-.486.803.057 1.226.824 1.226.824.715 1.225 1.873.871 2.33.665.072-.518.28-.871.507-1.071-1.776-.201-3.644-.888-3.644-3.955 0-.873.312-1.588.823-2.15-.083-.202-.357-1.015.078-2.115 0 0 .67-.215 2.2.82a7.64 7.64 0 0 1 2.002-.269 7.63 7.63 0 0 1 2.002.269c1.53-1.034 2.2-.82 2.2-.82.437 1.1.162 1.913.08 2.115.513.562.823 1.277.823 2.15 0 3.073-1.871 3.752-3.653 3.949.288.247.543.734.543 1.48 0 1.07-.01 1.933-.01 2.196 0 .215.146.463.55.385A8.002 8.002 0 0 0 8 .197z"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">Github</div>
+              </li>
+              <li class="icon-content">
+                <a
+                  href="https://www.instagram.com/tien.hieu.1503/"
+                  aria-label="Instagram"
+                  data-social="instagram"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">Instagram</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-</header>
