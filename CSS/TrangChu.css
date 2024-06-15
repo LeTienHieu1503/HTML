@@ -311,7 +311,7 @@ nav ul li a:hover,
 /* footer */
 footer {
   background-color: #000044;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
 }
 
@@ -338,8 +338,18 @@ footer {
   text-decoration: none;
 }
 
+.footer-section-border {
+  border: 1px solid #fff;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 .footer-section a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #f4a950;
+  border-radius: 10px;
+  padding: 2px;
 }
 
 .footer-bottom {
