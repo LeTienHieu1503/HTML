@@ -1,16 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  min-height: 100vh;
-  background-color: #f0f2f5;
-  color: #1c1e21;
-  scroll-behavior: smooth;
-}
-
 .p-Layout {
   text-align: justify;
   font-size: 22px;
@@ -29,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #ffffff;
   border-radius: 20px;
 }
 
