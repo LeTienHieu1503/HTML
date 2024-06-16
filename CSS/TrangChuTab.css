@@ -87,92 +87,15 @@ header {
   padding-left: 100px;
 }
 
-/* Navigation styles */
-nav {
-  border-radius: 10px;
-  padding-bottom: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding-right: 150px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul li {
-  margin: 0 15px;
-  position: relative;
-}
-
-nav ul li a {
-  font-weight: bold;
-  font-size: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-  border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover,
-.dropdown-content li a:hover {
-  background-color: #4c70ba;
-  color: #ffffff;
-}
-
-/* Dropdown styles */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f0f2f5;
-  min-width: 200px;
-  padding: 0;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 10px;
-  top: 50px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transform: translateY(-10px); /* Initial position for animation */
-}
-
-.dropdown-content li {
-  display: block;
-  text-align: left;
-  margin: 5px;
-}
-
-.dropdown-content li a {
-  color: #1c1e21;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-  border-bottom: 1px solid #333333;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dropdown-content li:last-child a {
-  border-bottom: none;
-}
-
-.show {
-  display: block !important;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-  transform: translateY(0); /* Final position for animation */
-}
-
 /* Card styles */
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px; /* Increased border radius */
-  background-color: #ffffff; /* Lighter shade for contrast */
+  background-color: #ffffff7d;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(20px);
   width: 90%;
   height: 500px; /* Reduced height */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
