@@ -36,9 +36,9 @@ body {
   color: #1c1e21;
   scroll-behavior: smooth;
   /*Background*/
-  background: linear-gradient(-45deg, #567abd, #d664ff, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #567abd, #c48dd7, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 13s ease infinite;
   height: 100vh;
 }
 

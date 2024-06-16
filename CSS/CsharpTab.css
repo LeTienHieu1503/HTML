@@ -78,7 +78,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px; /* Increased border radius */
-  background-color: #ffffff7d;
+  background-color: #ffffffc1;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(20px);
   width: 90%;

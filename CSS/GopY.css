@@ -7,6 +7,15 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: Arial, sans-serif; /* Thiết lập font chữ */
+  font-size: 3em; /* Kích thước chữ lớn */
+  font-weight: bold; /* Đậm */
+  color: #000000; /* Màu chữ đậm */
+  text-align: center; /* Canh giữa văn bản */
+  margin: 20px 0; /* Khoảng cách bên ngoài */
+}
+
 .form {
   background-color: white;
   border: 1px solid #ccc;
@@ -16,7 +25,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
   position: relative;
-  margin-top: 30px;
+  margin-top: -140px;
   background-color: #ffffff7d;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(20px);
@@ -32,7 +41,7 @@ body {
 
 .input-container {
   position: relative;
-  margin: 10px 0;
+  margin: 10px 0px 10px 20px;
 }
 
 .input-container input,
@@ -59,6 +68,8 @@ body {
 button {
   background-color: #000044;
   color: #f4a950;
+  font-weight: bold;
+  font-size: 20px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -67,5 +78,6 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #f4a950;
+  color: #000044;
 }
